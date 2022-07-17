@@ -70,9 +70,7 @@ img {
 }
 
 /* ---Студия---*/
-.services-title,
-.team-title,
-.clients-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -95,7 +93,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header > .container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -109,14 +107,25 @@ img {
 
   margin-right: 93px;
 }
-.logo-dark {
+.logo__text--dark {
   color: #000000;
 }
 
 /* Навигация */
-.nav-link,
-.contact-link {
-  display: block;
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 50px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__link {
+  display: inline-block;
+  position: relative;
+  color: var(--secondary-text-color);
   padding: 32px 0;
 
   font-weight: 500;
@@ -125,14 +134,7 @@ img {
   letter-spacing: 0.02em;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link {
-  position: relative;
-  color: var(--secondary-text-color);
-}
-.nav-link.current {
-  color: var(--accent-color);
-}
-.nav-link.current::after {
+.nav__link--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -143,41 +145,37 @@ img {
   background: var(--accent-color);
   border-radius: 2px;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.nav-item {
-  margin-right: 50px;
-}
-.nav-item:last-child {
-  margin-right: 0;
-}
-.contacts {
+.header__contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.contact-link {
-  color: var(--main-text-color);
-}
-.contact-list {
+.header__contacts-list {
   display: flex;
   align-items: center;
 }
-.contact-item {
+.header__contacts-item {
   margin-right: 50px;
 }
-.contact-item:last-child {
+.header__contacts-item:last-child {
   margin-right: 0;
 }
-.icon-mail,
-.icon-smartphone {
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-text-color);
+}
+.header__contacts-icon {
   margin-right: 10px;
   fill: currentColor;
 }
-.icon-mail:hover,
-.icon-smartphone:hover {
+.header__contacts-icon:hover {
   fill: currentColor;
 }
 
