@@ -674,7 +674,7 @@ img {
 .subscribe-form {
   display: flex;
 }
-.subscribe-form-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -694,8 +694,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe-form-input:hover,
-.subscribe-form-input:focus {
+.subscribe-form__input:hover,
+.subscribe-form__input:focus {
   border-color: var(--main-bg-color);
 }
 .subscribe-form__btn {
@@ -753,37 +753,37 @@ img {
 }
 
 /* Галерея проектов */
-.gallery-list {
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.gallery-item {
+.projects-list__item {
   display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.gallery-item:nth-child(3n) {
+.projects-list__item:nth-child(3n) {
   margin-right: 0;
 }
-.gallery-item:nth-child(n + 7) {
+.projects-list__item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.gallery-link {
+.projects-list__link {
   width: 370px;
   border: 1px solid var(--gallery-item-border);
 }
-.gallery-link:hover,
-.gallery-link:focus {
+.projects-list__link:hover,
+.projects-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.gallery-img-box {
+.projects-list__img-box {
   position: relative;
   overflow: hidden;
 }
-.gallery-description {
+.projects-list__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -799,11 +799,14 @@ img {
   transform: translateY(100%);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.gallery-link:hover .gallery-description,
-.gallery-link:focus .gallery-description {
+.projects-list__link:hover .projects-list__description,
+.projects-list__link:focus .projects-list__description {
   transform: translateY(0);
 }
-.gallery-title {
+.projects-list__text-box {
+  padding: 20px 24px;
+}
+.projects-list__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -811,13 +814,10 @@ img {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
-.gallery-text {
+.projects-list__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-.gallery-content {
-  padding: 20px 24px;
 }
