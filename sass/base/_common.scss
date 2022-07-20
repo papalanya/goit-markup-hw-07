@@ -19,3 +19,15 @@ body {
     letter-spacing: 0.03em;
     color: $secondary-text-color;
 }
+.link {
+    text-decoration: none;
+    color: currentColor;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+.list {
+    list-style: none;
+}

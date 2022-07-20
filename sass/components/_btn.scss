@@ -13,10 +13,10 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: $transitionStyle;
-}
 
-.btn:hover,
-.btn:focus {
-    color: $main-bg-color;
-    background-color: $btn-active-cl;
+    &:hover,
+    &:focus {
+        color: $main-bg-color;
+        background-color: $btn-active-cl;
+    }
 }
